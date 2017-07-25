@@ -14,5 +14,11 @@ http://localhost:6200/content/m27/jspinfo.html
 http://localhost:6201/content/m27/jspinfo.html
 
 = HTLINFO
+http://localhost:6200/editor.html/content/m27/htlinfo.html
 http://localhost:6200/content/m27/htlinfo.html
 http://localhost:6201/content/m27/htlinfo.html
+
+= HTLTEMPLATE
+http://localhost:6200/editor.html/content/m27/htltemplate.html
+http://localhost:6200/content/m27/htltemplate.html
+http://localhost:6201/content/m27/htltemplate.html
