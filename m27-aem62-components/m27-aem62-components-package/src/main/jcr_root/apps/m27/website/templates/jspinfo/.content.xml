@@ -9,6 +9,7 @@
           ranking="{Long}1">
     <jcr:content
             jcr:primaryType="cq:PageContent"
-            sling:resourceType="m27/website/components/jspinfo">
+            sling:resourceType="m27/website/components/jspinfo"
+            cq:designPath="/etc/designs/m27/website">
     </jcr:content>
 </jcr:root>
