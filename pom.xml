@@ -29,7 +29,7 @@
         <!-- version of CQ dependencies pom (should reflect the versions of all
             bundles currently being deployed in CQ -->
         <cq.dependencies.version>6.2.0</cq.dependencies.version>
-        <cq.port>6700</cq.port>
+        <cq.port>6200</cq.port>
         <cq.user>admin</cq.user>
         <cq.password>admin</cq.password>
         <bundle-category>netcentric</bundle-category>
