@@ -20,16 +20,13 @@
                     sling:resourceType="m27/website/components/par/htltemplate"
                     jcr:title="HTL Template JCR Title">
             </htltemplate>
-            <htlinfo
+            <image
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="m27/website/components/htlinfo"
-                    jcr:title="HTL Info JCR Title">
-            </htlinfo>
-            <htlinfo
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="m27/website/components/htlinfo"
-                    jcr:title="HTL Info JCR Title">
-            </htlinfo>
+                    sling:resourceType="m27/website/components/par/image"
+                    jcr:title="Mobile Phone"
+                    alt="mobile phone"
+                    fileReference="/content/dam/projects/media/cover">
+            </image>
         </par>
     </jcr:content>
 </jcr:root>
