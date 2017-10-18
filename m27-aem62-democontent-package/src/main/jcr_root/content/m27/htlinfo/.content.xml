@@ -4,7 +4,7 @@
           jcr:mixinTypes="[rep:AccessControllable]"
           jcr:primaryType="cq:Page">
     <jcr:content
-            cq:template="/apps/m27/website/templates/jspinfo"
+            cq:template="/apps/m27/website/templates/htlinfo"
             jcr:primaryType="cq:PageContent"
             jcr:title="M27 AEM62 Demo Content HTL Info"
             sling:resourceType="m27/website/components/htlinfo">
