@@ -1,7 +1,7 @@
 # MARCO27 AEM 6.2
 
-=AEM 6.2
-cd ~/dev/repository/git/m27-aem62-servers
+= AEM 6.2
+cd ~/dev/myStash/aem62-servers
 mvn cq-start
 
 = DEPLOY into AEM SERVERS
