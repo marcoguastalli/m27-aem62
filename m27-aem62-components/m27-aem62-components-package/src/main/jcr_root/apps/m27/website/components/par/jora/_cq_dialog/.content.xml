@@ -27,40 +27,13 @@
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="granite/ui/components/foundation/container">
                         <items jcr:primaryType="nt:unstructured">
-                            <alignment
-                                    jcr:primaryType="cq:Widget"
-                                    sling:resourceType="granite/ui/components/foundation/form/select"
-                                    fieldLabel="Alignment"
-                                    defaultValue="Select"
-                                    value="default"
-                                    name="./alignment">
-                                <items jcr:primaryType="cq:WidgetCollection">
-                                    <left
-                                            jcr:primaryType="nt:unstructured"
-                                            text="Left Aligned"
-                                            value="left"/>
-                                    <center
-                                            jcr:primaryType="nt:unstructured"
-                                            text="Centered "
-                                            value="center"/>
-                                    <right
-                                            jcr:primaryType="nt:unstructured"
-                                            text="Right Aligned"
-                                            value="right"/>
-                                </items>
-                            </alignment>
-                            <title
+                            <dateTimeFormatterPattern
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="granite/ui/components/foundation/form/textfield"
-                                    fieldLabel="Title"
-                                    message="Title is required"
-                                    name="./title"
-                                    nn-validation="required"/>
-                            <altText
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
-                                    fieldLabel="Alt Text"
-                                    name="./alt"/>
+                                    fieldLabel="DateTimeFormatter Pattern"
+                                    name="./dateTimeFormatterPattern"
+                                    value="yyyy-MM-dd HH:mm:ss"
+                                    required="{Boolean}true"/>
                         </items>
                     </columns>
                 </items>
