@@ -5,7 +5,7 @@
           jcr:primaryType="cq:Page">
     <jcr:content
             jcr:primaryType="cq:PageContent"
-            jcr:title="M27 AEM62 Demo Content JSP Info"
+            jcr:title="JSP Info Demo Content"
             sling:resourceType="m27/website/components/par/jspinfo">
     </jcr:content>
 </jcr:root>

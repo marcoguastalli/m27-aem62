@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="cq/gui/components/authoring/dialog"
+          mode="edit">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+                type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <columns
+                    jcr:primaryType="nt:unstructured"
+                    sling:hideResource="{Boolean}true"/>
+            <button
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Jora"
+                    sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <alignment
+                                    jcr:primaryType="cq:Widget"
+                                    sling:resourceType="granite/ui/components/foundation/form/select"
+                                    fieldLabel="Alignment"
+                                    defaultValue="Select"
+                                    value="default"
+                                    name="./alignment">
+                                <items jcr:primaryType="cq:WidgetCollection">
+                                    <left
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Left Aligned"
+                                            value="left"/>
+                                    <center
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Centered "
+                                            value="center"/>
+                                    <right
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Right Aligned"
+                                            value="right"/>
+                                </items>
+                            </alignment>
+                            <title
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                    fieldLabel="Title"
+                                    message="Title is required"
+                                    name="./title"
+                                    nn-validation="required"/>
+                            <altText
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                    fieldLabel="Alt Text"
+                                    name="./alt"/>
+                        </items>
+                    </columns>
+                </items>
+            </button>
+        </items>
+    </content>
+</jcr:root>
