@@ -1,4 +1,5 @@
-<div data-sly-test="${properties.title}">
-    <span aria-hidden="true">${properties.title}</span>
+<sly data-sly-use.component="${'net.marco27.aem6.components.par.jora.JoraModel'}"/>
+<div data-sly-test="${properties.dateTimeFormatterPattern}">
+    <span aria-hidden="true">${component.jora}</span>
 </div>
-<div class="cq-placeholder" data-emptytext="jora component" data-sly-test.isEmpty="${!wcmmode.disabled && !properties.title}"></div>
+<div class="cq-placeholder" data-emptytext="jora component" data-sly-test.isEmpty="${!wcmmode.disabled && !properties.dateTimeFormatterPattern}"></div>

@@ -20,7 +20,7 @@
                 <artifactId>maven-bundle-plugin</artifactId>
                 <configuration>
                     <instructions>
-                        <Sling-Model-Packages>net.marco27.aem6.components.osgi</Sling-Model-Packages>
+                        <Sling-Model-Packages>net.marco27.aem6.components</Sling-Model-Packages>
                     </instructions>
                 </configuration>
             </plugin>
