@@ -22,3 +22,8 @@ http://localhost:6201/content/m27/htlinfo.html
 http://localhost:6200/editor.html/content/m27/htltemplate.html
 http://localhost:6200/content/m27/htltemplate.html
 http://localhost:6201/content/m27/htltemplate.html
+
+= JORA
+http://localhost:6200/editor.html/content/m27/jora.html
+http://localhost:6200/content/m27/jora.html
+http://localhost:6201/content/m27/jora.html
