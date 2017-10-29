@@ -5,7 +5,6 @@ import java.time.format.DateTimeFormatter;
 
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Default;
-import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 
@@ -17,7 +16,8 @@ public class JoraModel {
      */
     private String jora;
 
-    @ValueMapValue
+    @Default(values = "yyyy-MM-dd HH:mm:ss")
+    @ValueMapValue(optional = false)
     private String dateTimeFormatterPattern;
 
     public String getJora() {
