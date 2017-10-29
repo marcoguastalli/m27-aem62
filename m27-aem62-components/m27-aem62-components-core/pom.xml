@@ -30,7 +30,6 @@
                 <artifactId>maven-sling-plugin</artifactId>
             </plugin>
             <!-- generates OSGi Service Runtime (SCR) configuration -->
-            <!--
             <plugin>
                 <groupId>org.apache.felix</groupId>
                 <artifactId>maven-scr-plugin</artifactId>
@@ -43,7 +42,6 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
-            -->
         </plugins>
     </build>
 
@@ -234,11 +232,6 @@
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpcore</artifactId>
             <version>4.4.5</version>
-        </dependency>
-        <dependency>
-            <groupId>com.adobe.aem</groupId>
-            <artifactId>aem-api</artifactId>
-            <version>6.0.0.1</version>
         </dependency>
         <dependency>
             <groupId>org.apache.felix</groupId>

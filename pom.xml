@@ -11,7 +11,7 @@
     <parent>
         <groupId>biz.netcentric.cq</groupId>
         <artifactId>cq-parent</artifactId>
-        <version>1.18</version>
+        <version>1.9</version>
     </parent>
 
     <name>M27 AEM62</name>
