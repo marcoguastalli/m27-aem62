@@ -1,3 +1,14 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"/>
+<sly data-sly-test.isAuthor="${!wcmmode.disabled}"
+     data-sly-call="${clientLib.all @ categories='m27.author'}"></sly>
+<sly data-sly-test="${!isAuthor}">
+    <sly data-sly-call="${clientlib.all @ categories='m27.publish'}"/>
+</sly>
 <sly data-sly-use.comp="net.marco27.aem6.components.migrationtool.component.MigrationTool">
-TODO
+    <div class="wrapper">
+        <dl data-sly-list="${comp.migrations}">
+            <dt>index: ${itemList.index}</dt>
+            <dd>value: ${item.migrationName}</dd>
+        </dl>
+    </div>
 </sly>
