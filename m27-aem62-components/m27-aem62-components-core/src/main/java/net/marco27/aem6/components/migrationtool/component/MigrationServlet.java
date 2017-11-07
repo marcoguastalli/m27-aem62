@@ -24,7 +24,7 @@ import net.marco27.aem6.components.migrationtool.model.MigrationStatus;
 /**
  * Migration Bundle Component Servlet
  */
-@SlingServlet(methods = { "GET" }, paths = { "/bin/ubs/migration" })
+@SlingServlet(methods = { "GET" }, paths = { "/bin/m27/migration" })
 public class MigrationServlet extends SlingAllMethodsServlet {
 
     private static final Logger LOG = LoggerFactory.getLogger(MigrationServlet.class);

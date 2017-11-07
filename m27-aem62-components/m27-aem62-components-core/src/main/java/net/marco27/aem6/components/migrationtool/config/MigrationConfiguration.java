@@ -15,7 +15,7 @@ import net.marco27.aem6.components.migrationtool.Migration;
 
 /**
  * Migration Bundle Configuration This component is loaded as OSGi bundle. It loads all implementations of the
- * com.ubs.hhj.cq.fit.migration.Migration interface in a List of Migration Two methods are exposed to get all the
+ * net.marco27.aem6.components.migrationtool.Migration interface in a List of Migration Two methods are exposed to get all the
  * implementations or a specifyc one using its name
  */
 @Component
