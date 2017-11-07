@@ -7,7 +7,7 @@
 <sly data-sly-use.comp="net.marco27.aem6.components.migrationtool.component.MigrationTool">
     <div class="migrationButtons" data-sly-list="${comp.migrations}">
         <br>
-        <p><strong>${itemList.index} ${item.migrationName}</strong></p>
+        <p><strong>${itemList.count} - ${item.migrationName}</strong></p>
         <br>
         <p>Enter the paths in which you want to do the migration:</p>
         <textarea id="migrationPaths_${itemList.index}" rows="${item.pathsNumber}" cols="50">${item.defaultPaths}</textarea>
