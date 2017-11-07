@@ -5,10 +5,15 @@
     <sly data-sly-call="${clientlib.all @ categories='m27.publish'}"/>
 </sly>
 <sly data-sly-use.comp="net.marco27.aem6.components.migrationtool.component.MigrationTool">
-    <div class="wrapper">
-        <dl data-sly-list="${comp.migrations}">
-            <dt>index: ${itemList.index}</dt>
-            <dd>value: ${item.migrationName}</dd>
-        </dl>
+    <div class="migrationButtons" data-sly-list="${comp.migrations}">
+        <br>
+        <p><strong>${itemList.index} ${item.migrationName}</strong></p>
+        <br>
+        <p>Enter the paths in which you want to do the migration:</p>
+        <textarea id="migrationPaths_${itemList.index}" rows="${item.pathsNumber}" cols="50">${item.defaultPaths}</textarea>
+        <br>
+        <input type="checkbox" class="dryRun" id="dryRun_${itemList.index}" checked>Dry Run<br>
+        <button class="migrationButton" id="migrationButton_${itemList.index}" val="${item.migrationName}" type="button">Migrate</button>
     </div>
+    <div id="migrationResult"></div>
 </sly>
