@@ -1,4 +1,11 @@
-<div class="wrapper">
+<div class="cq-placeholder" data-emptytext="${component.title}" data-sly-test.isEmpty="${!wcmmode.disabled && !properties.jcr:title}"></div>
+<sly data-sly-use.textimage="net.marco27.aem6.components.par.textimage.TextImageComponent"></sly>
+<div data-sly-test="${properties.text && textimage.text}" class="wrapper">
     ${properties.text}
 </div>
-<div data-sly-test="${!properties.text}" class="cq-placeholder" data-emptytext="${component.title}"></div>
+<div data-sly-test="${textimage.richText}" class="wrapper">
+    ${textimage.richText @ context='html'}
+</div>
+<div data-sly-test="${textimage.image && textimage.image.fileReference}" class="wrapper">
+    <img src="${textimage.image.fileReference}" alt="${textandimage.image.alt}" aria-hidden="true">
+</div>
