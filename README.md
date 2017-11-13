@@ -27,3 +27,13 @@ http://localhost:6201/content/m27/htltemplate.html
 http://localhost:6200/editor.html/content/m27/jora.html
 http://localhost:6200/content/m27/jora.html
 http://localhost:6201/content/m27/jora.html
+
+= TEXTANDIMAGE
+http://localhost:6200/editor.html/content/m27/textandimage.html
+http://localhost:6200/content/m27/textandimage.html
+http://localhost:6201/content/m27/textandimage.html
+
+= TEXTIMAGE
+http://localhost:6200/editor.html/content/m27/textimage.html
+http://localhost:6200/content/m27/textimage.html
+http://localhost:6201/content/m27/textimage.html
