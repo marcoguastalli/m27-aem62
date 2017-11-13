@@ -37,3 +37,8 @@ http://localhost:6201/content/m27/textandimage.html
 http://localhost:6200/editor.html/content/m27/textimage.html
 http://localhost:6200/content/m27/textimage.html
 http://localhost:6201/content/m27/textimage.html
+
+= MIGRATION TOOL
+http://localhost:6200/editor.html/etc/migrationtool.html
+http://localhost:6200/etc/migrationtool.html
+http://localhost:6201/etc/migrationtool.html
