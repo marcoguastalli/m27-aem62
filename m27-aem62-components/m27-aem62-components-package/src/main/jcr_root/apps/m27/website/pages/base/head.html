@@ -1,9 +1,13 @@
 <head data-sly-use.wcmInit="initwcm.js"
-	data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html">
+	  data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html">
 	<title data-sly-test="${currentPage.pageTitle}">${currentPage.pageTitle}</title>
 	<title data-sly-test="${!currentPage.pageTitle}">${currentPage.title}</title>
 	<sly data-sly-include="head-meta.html"></sly>
 	<sly data-sly-include="stylesheets.html"></sly>
 	<sly data-sly-test.isAuthor="${!wcmmode.disabled && wcmInit.isTouchAuthoring}"
-		 data-sly-call="${clientLib.all @ categories='coralui2,granite.ui.foundation,granite.ui.foundation.admin,cq.shared,cq.projects.admin,cq.authoring.page'}"></sly>
+	<sly data-sly-test.isAuthor="${!wcmmode.disabled}"
+		 data-sly-call="${clientLib.all @ categories='coralui2,granite.ui.foundation,granite.ui.foundation.admin,cq.shared,cq.projects.admin,cq.authoring.page,m27.author'}"></sly>
+	<sly data-sly-test="${!isAuthor}">
+		<sly data-sly-call="${clientlib.all @ categories='coralui2,granite.ui.foundation,granite.ui.foundation.admin,cq.shared,cq.projects.admin,cq.authoring.page,m27.publish'}"/>
+	</sly>
 </head>
