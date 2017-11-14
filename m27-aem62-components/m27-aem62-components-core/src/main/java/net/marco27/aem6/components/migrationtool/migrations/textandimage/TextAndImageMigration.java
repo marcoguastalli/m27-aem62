@@ -1,4 +1,4 @@
-package net.marco27.aem6.components.migrationtool.migrations.messagestage;
+package net.marco27.aem6.components.migrationtool.migrations.textandimage;
 
 import org.apache.felix.scr.annotations.Activate;
 import org.apache.felix.scr.annotations.Component;
@@ -18,12 +18,12 @@ import net.marco27.aem6.components.migrationtool.AbstractMigrationController;
 @Component(metatype = true)
 @Properties({
         @Property(name = "PATHS", label = "PATHS", description = "Defines the paths where the migration will be launched", value = {
-                "/content/microsites/"
+                "/content/m27/migrationtool/"
         }),
-        @Property(name = "NAME", label = "NAME", description = "Change the resourceType of the sectionheader component", value = "UBSFITREQ-26804 - Magazine - Enable MS6 Message Stage and Teaser"),
+        @Property(name = "NAME", label = "NAME", description = "Change the resourceType of the TextAndImage Component", value = "Migrate TextAndImage to TextImage and viceversa"),
 })
 @Service
-public class MessageStageMigration extends AbstractMigration {
+public class TextAndImageMigration extends AbstractMigration {
 
     @Activate
     private void init(final ComponentContext context) {
@@ -34,6 +34,6 @@ public class MessageStageMigration extends AbstractMigration {
     @Override
     protected AbstractMigrationController getControllerInstance(ResourceResolver resourceResolver,
             final boolean dryRun) {
-        return new MessageStageMigrationController(resourceResolver, dryRun);
+        return new TextAndImageMigrationController(resourceResolver, dryRun);
     }
 }
