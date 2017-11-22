@@ -1,4 +1,4 @@
-package net.marco27.aem6.components.osgi;
+package net.marco27.aem6.components.osgi.helloosgi;
 
 import java.io.IOException;
 
@@ -9,7 +9,6 @@ import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.SlingHttpServletResponse;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.servlets.SlingSafeMethodsServlet;
-import org.osgi.service.component.ComponentContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

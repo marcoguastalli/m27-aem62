@@ -37,7 +37,27 @@ public class Jora {
                 Jora.DEFAULT_ENABLED);
     }
 
+    /**
+     * Return the jora using the OSGi ConfigMgr dateTimeFormatterPattern
+     *
+     * @return jora as String
+     */
     public String getJora() {
+        if (isComponentEnabled) {
+            LocalDateTime now = LocalDateTime.now();
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern(dateTimeFormatterPattern);
+            return now.format(formatter);
+        }
+        return null;
+    }
+
+    /**
+     * Return the jora using the input parameter dateTimeFormatterPattern
+     *
+     * @param dateTimeFormatterPattern with the value setted in the Dialog of the AEM Component
+     * @return jora as String
+     */
+    public String getJora(final String dateTimeFormatterPattern) {
         if (isComponentEnabled) {
             LocalDateTime now = LocalDateTime.now();
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern(dateTimeFormatterPattern);

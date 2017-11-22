@@ -1,4 +1,4 @@
-package net.marco27.aem6.components.osgi;
+package net.marco27.aem6.components.osgi.helloosgi;
 
 import org.apache.felix.scr.annotations.Component;
 import org.apache.felix.scr.annotations.Service;

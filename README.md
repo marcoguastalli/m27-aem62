@@ -42,3 +42,13 @@ http://localhost:6201/content/m27/textimage.html
 http://localhost:6200/editor.html/etc/migrationtool.html
 http://localhost:6200/etc/migrationtool.html
 http://localhost:6201/etc/migrationtool.html
+
+= BASE ClientLib
+http://localhost:6200/editor.html/content/m27/baseclientlib.html
+http://localhost:6200/content/m27/baseclientlib.html
+http://localhost:6201/content/m27/baseclientlib.html
+
+= BASE OSGi
+http://localhost:6200/editor.html/content/m27/baseosgi.html
+http://localhost:6200/content/m27/baseosgi.html
+http://localhost:6201/content/m27/baseosgi.html

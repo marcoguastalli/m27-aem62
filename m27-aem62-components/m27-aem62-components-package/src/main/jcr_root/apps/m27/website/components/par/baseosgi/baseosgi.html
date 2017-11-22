@@ -1,0 +1,55 @@
+<div class="wrapper">
+    <h2>Base OSGi Component - a BackEnd Showcase"</h2>
+    <div class="row">
+        <div class="column">
+            net.marco27.aem6.components.osgi.helloosgi.HelloOsgi
+        </div>
+        <div class="column">
+            <p>@Component(metatype = true, immediate = true, label = "Hello OSGi Component")</p>
+            <p>@Property(name = HelloOsgi.PROPERTY_NAME, value = { HelloOsgi.PROPERTY_DEFAULT_VALUE })</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            net.marco27.aem6.components.osgi.helloosgi.HelloOsgiService
+        </div>
+        <div class="column">
+            <p>@Interface with a method declaration and NO annotations</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            net.marco27.aem6.components.osgi.helloosgi.HelloOsgiServiceImpl
+        </div>
+        <div class="column">
+            <p>implements HelloOsgiService</p>
+            <p>@Component</p>
+            <p>@Service(value = HelloOsgiService.class)</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <p>net.marco27.aem6.components.osgi.helloosgi.HelloOsgiServlet</p>
+            <p id="callHelloOsgiServlet">callHelloOsgiServlet</p>
+            <p id="callHelloOsgiServletOutput"></p>
+        </div>
+        <div class="column">
+            <p>@SlingServlet(paths = "/bin/helloosgiservlet", methods = "GET", extensions = "json")</p>
+            <p>extends SlingSafeMethodsServlet</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <p>net.marco27.aem6.components.osgi.helloosgi..HelloOsgiServletWithProperties</p>
+            <p class="callHelloOsgiServletProp">callHelloOsgiServletProp</p>
+            <p class="callHelloOsgiServletPropOutput"></p>
+            <p class="callHelloOsgiServletPropReset">callHelloOsgiServletPropReset</p>
+        </div>
+        <div class="column">
+            <p>@SlingServlet(paths = "/bin/helloosgiservletprop", methods = "GET", extensions = "json", metatype = true)</p>
+            <p>@Properties({ @Property(name = PROPERTY_NAME, description = "Insert your name", value = "Marco"),
+                @Property(name = PROPERTY_SURNAME, description = "Insert your surname", value = " Guastalli") })</p>
+        </div>
+    </div>
+</div>
+<div class="cq-placeholder" data-emptytext="Base OSGi component" data-sly-test.isEmpty="${!wcmmode.disabled && !properties.jcr:title}"></div>

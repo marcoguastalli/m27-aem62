@@ -23,10 +23,23 @@
     margin-left: 8px;
 }
 
+/*m27 structure INI*/
 .wrapper {
-    border: 1px solid grey;
+    margin: 0px auto;
 }
 
+.column {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/*m27 structure END*/
 /*migrationtool INI*/
 .migrationButton {
     background: #3498db;

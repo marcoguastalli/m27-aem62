@@ -1,18 +1,17 @@
-.iframe__base {
-    display:block;
-    margin: 0 auto;
-}
-.container--full {
-    position: relative;
-    margin: 0 auto;
-    max-width: 1600px;
-}
-
-.container--grid {
-    max-width: 1176px;
-    margin: 0 auto;
-}
-
+/*m27 structure INI*/
 .wrapper {
-    border: 1px solid red;
+    margin: 0px auto;
 }
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/*m27 structure END*/

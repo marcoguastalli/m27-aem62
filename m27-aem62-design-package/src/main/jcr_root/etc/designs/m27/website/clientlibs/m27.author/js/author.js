@@ -1,6 +1,4 @@
-/* Please include here all author script code needed */
-$(document).ready(function(){
-
+var migrationTool = function () {
     $(".migrationButton").on('click', function() {
         var buttonID = $(this).attr('id');
         var number = buttonID.split("_")[1];
@@ -15,5 +13,11 @@ $(document).ready(function(){
             }
         });
     });
+};
 
+/**
+ * document ready function
+ */
+$(document).ready(function () {
+    migrationTool();
 });
