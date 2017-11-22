@@ -1,7 +1,6 @@
 <sly data-sly-use.component="${'net.marco27.aem6.components.par.jora.JoraModel'}"/>
 <div data-sly-test="${properties.dateTimeFormatterPattern}">
-    <span aria-hidden="true">${component.jora}</span>
+    <span aria-hidden="true">${component.joraFormatted}</span>
 </div>
-<div id="useDialogDateTimeFormatterPattern">Use dialog dateTimeFormatterPattern</div>
-<div id="joraOutputDiv">TODO</div>
-<div class="cq-placeholder" data-emptytext="jora component" data-sly-test.isEmpty="${!wcmmode.disabled && !properties.dateTimeFormatterPattern}"></div>
+<div class="cq-placeholder" data-emptytext="jora component"
+     data-sly-test.isEmpty="${!wcmmode.disabled && !properties.dateTimeFormatterPattern}"></div>
