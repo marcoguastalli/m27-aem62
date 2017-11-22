@@ -7,12 +7,14 @@ import java.util.Dictionary;
 import org.apache.felix.scr.annotations.Activate;
 import org.apache.felix.scr.annotations.Component;
 import org.apache.felix.scr.annotations.Property;
+import org.apache.felix.scr.annotations.Service;
 import org.apache.sling.commons.osgi.PropertiesUtil;
 import org.osgi.framework.BundleContext;
 import org.osgi.service.component.ComponentContext;
 
 @Component(immediate = true, metatype = true, label = "Jora OSGi Component")
-public class Jora {
+@Service(value = JoraService.class)
+public class Jora implements JoraService {
     protected BundleContext bundleContext;
 
     private static final boolean DEFAULT_ENABLED = true;
@@ -37,11 +39,7 @@ public class Jora {
                 Jora.DEFAULT_ENABLED);
     }
 
-    /**
-     * Return the jora using the OSGi ConfigMgr dateTimeFormatterPattern
-     *
-     * @return jora as String
-     */
+    @Override
     public String getJora() {
         if (isComponentEnabled) {
             LocalDateTime now = LocalDateTime.now();
@@ -51,12 +49,7 @@ public class Jora {
         return null;
     }
 
-    /**
-     * Return the jora using the input parameter dateTimeFormatterPattern
-     *
-     * @param dateTimeFormatterPattern with the value setted in the Dialog of the AEM Component
-     * @return jora as String
-     */
+    @Override
     public String getJora(final String dateTimeFormatterPattern) {
         if (isComponentEnabled) {
             LocalDateTime now = LocalDateTime.now();
