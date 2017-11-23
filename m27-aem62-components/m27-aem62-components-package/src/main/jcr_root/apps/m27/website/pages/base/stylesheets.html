@@ -1,2 +1,6 @@
-<sly data-sly-use.clientLib="${'/libs/granite/sightly/templates/clientlib.html'}">
+<sly data-sly-use.clientLib="${'/libs/granite/sightly/templates/clientlib.html'}"/>
+<sly data-sly-test.isAuthor="${!wcmmode.disabled && wcmInit.isTouchAuthoring}"
+     data-sly-call="${clientLib.all @ categories='coralui2,granite.ui.foundation,granite.ui.foundation.admin,cq.shared,cq.projects.admin,cq.authoring.page,m27.publish,m27.author'}"></sly>
+<sly data-sly-test="${!isAuthor}">
+    <sly data-sly-call="${clientlib.all @ categories='coralui2,granite.ui.foundation,granite.ui.foundation.admin,cq.shared,m27.publish'}"/>
 </sly>
