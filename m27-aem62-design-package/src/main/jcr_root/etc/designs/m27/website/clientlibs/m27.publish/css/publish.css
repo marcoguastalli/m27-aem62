@@ -14,4 +14,9 @@
     display: table;
     clear: both;
 }
+
+p {
+    font-family: Verdana;
+}
+
 /*m27 structure END*/

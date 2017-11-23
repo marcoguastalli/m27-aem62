@@ -69,6 +69,21 @@ var callHelloOsgiServletPropReset = function () {
     });
 };
 
+var refreshJora = function () {
+    $('#refreshJora').click(function () {
+        $.ajax({
+            type: "GET",
+            url: "/content/m27/jora.jora.html",
+            success: function (data, textStatus, jqXHR) {
+                $('#printJora').text(data);
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                console.log("errorThrown: " + errorThrown);
+            }
+        })
+    });
+};
+
 /**
  * document ready function
  */
@@ -77,4 +92,5 @@ $(document).ready(function () {
     callHelloOsgiServlet()
     callHelloOsgiServletProp()
     callHelloOsgiServletPropReset()
+    refreshJora()
 });
