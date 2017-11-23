@@ -25,7 +25,7 @@ import org.slf4j.LoggerFactory;
 @Properties(value = { @Property(name = "sling.servlet.resourceTypes", value = "sling/servlet/default"),
         @Property(name = "sling.servlet.selectors", value = { JoraServlet.SELECTOR_JORA }),
         @Property(name = "sling.servlet.extensions", value = { "html" }),
-        @Property(name = "sling.servlet.methods", value = { "GET", "POST" }) })
+        @Property(name = "sling.servlet.methods", value = { "GET"}) })
 public class JoraServlet extends SlingSafeMethodsServlet {
 
     private static final Logger LOG = LoggerFactory.getLogger(JoraServlet.class);
