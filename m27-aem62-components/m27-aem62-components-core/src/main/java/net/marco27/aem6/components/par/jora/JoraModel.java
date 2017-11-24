@@ -7,6 +7,7 @@ import org.apache.sling.models.annotations.Default;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.OSGiService;
+import org.apache.sling.models.annotations.injectorspecific.Self;
 import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 
 import net.marco27.aem6.components.osgi.jora.JoraService;
@@ -20,6 +21,9 @@ public class JoraModel {
     @Default(values = "yyyy-MM-dd HH:mm:ss")
     @ValueMapValue(optional = false)
     private String dateTimeFormatterPattern;
+
+    @Self
+    private Resource resource;
 
     /**
      * jora means in wrong-spanish hora, time in english
