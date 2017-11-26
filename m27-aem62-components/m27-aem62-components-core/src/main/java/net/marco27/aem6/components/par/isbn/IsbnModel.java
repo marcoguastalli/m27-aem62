@@ -6,15 +6,19 @@ import javax.inject.Inject;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.OSGiService;
+import org.apache.sling.models.annotations.injectorspecific.ScriptVariable;
 import org.apache.sling.models.annotations.injectorspecific.Self;
+
+import com.day.cq.wcm.api.Page;
 
 import net.marco27.aem6.components.osgi.isbn.IsbnWebService;
 import net.marco27.aem6.components.osgi.isbn.IsbnWebServiceStore;
 
 @Model(adaptables = { SlingHttpServletRequest.class })
 public class IsbnModel {
+
     @Self
-    private SlingHttpServletRequest slingHttpServletRequest;
+    private SlingHttpServletRequest request;
 
     @OSGiService
     private IsbnWebService isbnWebService;
@@ -22,16 +26,21 @@ public class IsbnModel {
     @Inject
     private IsbnWebServiceStore isbnWebServiceStore;
 
+    @ScriptVariable
+    private Page currentPage;
+
+    private String mappedUri;
+
     @PostConstruct
     public void init() {
+        this.mappedUri = this.request.getResourceResolver().map(currentPage.getPath());
+    }
 
+    public String getMappedUri() {
+        return mappedUri;
     }
 
     public String getIsbnBook() {
         return isbnWebService.getBook("TODO");
-    }
-
-    public String getIsbnBook(final String bookIsbnCode) {
-        return isbnWebService.getBook(bookIsbnCode);
     }
 }
