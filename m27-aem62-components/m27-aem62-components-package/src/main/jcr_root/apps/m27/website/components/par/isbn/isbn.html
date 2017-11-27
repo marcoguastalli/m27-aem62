@@ -1,9 +1,9 @@
 <sly data-sly-use.isbn="${'net.marco27.aem6.components.par.isbn.IsbnModel'}"/>
 <div class="wrapper">
-    <h2>ISBN Component</h2>
+    <h2>${'comp.isbn.title' @ i18n}</h2>
     <div class="row">
         <div class="column">
-            <label>Insert ISBN Code</label>
+            <label>${'comp.isbn.insert.code' @ i18n}</label>
             <input type="hidden" id="mappedUri" name="mappedUri" value="${isbn.mappedUri}"/>
             <input type="text" id="isbnCode" name="isbnCode" value="0061031321"/>
             <button id="isbnCodeSubmit" name="isbnCodeSubmit" value="Get ISBN Book"/>

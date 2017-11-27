@@ -4,6 +4,9 @@
 cd ~/dev/myStash/aem62-servers
 mvn cq-start
 
+##### Translations
+http://localhost:6200/libs/cq/i18n/translator.html
+
 ## DEPLOY into AEM SERVERS
 mvn clean install -Pserver-package-deploy -Dcq.server=http://localhost:6200
 mvn clean install -Pserver-package-deploy -Dcq.server=http://localhost:6201
@@ -49,11 +52,18 @@ http://localhost:6201/etc/migrationtool.html
 http://localhost:6200/editor.html/content/m27/baseclientlib.html
 http://localhost:6200/content/m27/baseclientlib.html
 http://localhost:6201/content/m27/baseclientlib.html
+##### DumpLibs
+http://localhost:6200/libs/granite/ui/content/dumplibs.html
+http://localhost:6200/libs/granite/ui/content/dumplibs.test.html?categories=m27.author
+http://localhost:6201/libs/granite/ui/content/dumplibs.test.html?categories=m27.publish
 
 ## BASE OSGi
 http://localhost:6200/editor.html/content/m27/baseosgi.html
 http://localhost:6200/content/m27/baseosgi.html
 http://localhost:6201/content/m27/baseosgi.html
+##### OSGi Configuration Settings
+https://helpx.adobe.com/experience-manager/6-2/sites/deploying/using/osgi-configuration-settings.html
+https://helpx.adobe.com/experience-manager/6-2/sites/deploying/using/osgi-configuration-settings.html#AEMHTMLLibraryManager
 
 ## ISBN
 http://localhost:6200/editor.html/content/m27/isbn.html
