@@ -45,7 +45,7 @@ public class IsbnWebServiceClient implements IsbnWebService {
     }
 
     @Override
-    public String getBook(final String bookIsbnCode) {
+    public String getBookXml(final String bookIsbnCode) {
         //String uri = String.format("http://isbndb.com/api/books.xml?access_key=%s&index1=isbn&value1=0061031321", apiKey);
         String uri = String.format("http://isbndb.com/api/books.xml?access_key=%s&index1=isbn&value1=%s", apiKey, bookIsbnCode);
         String xml = callApi(uri);
