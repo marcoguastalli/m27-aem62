@@ -32,6 +32,9 @@ public class IsbnWebServiceClient implements IsbnWebService {
     private static final Logger LOG = LoggerFactory.getLogger(IsbnWebServiceClient.class);
 
     @Reference
+    private IsbnWebServiceStore isbnWebServiceStore;
+
+    @Reference
     private IsbnWebServiceConfiguration isbnWebServiceConfiguration;
 
     private String apiKey;
@@ -45,7 +48,9 @@ public class IsbnWebServiceClient implements IsbnWebService {
     public String getBook(final String bookIsbnCode) {
         //String uri = String.format("http://isbndb.com/api/books.xml?access_key=%s&index1=isbn&value1=0061031321", apiKey);
         String uri = String.format("http://isbndb.com/api/books.xml?access_key=%s&index1=isbn&value1=%s", apiKey, bookIsbnCode);
-        return callApi(uri);
+        String xml = callApi(uri);
+        isbnWebServiceStore.addIsbnBook(bookIsbnCode, xml);
+        return xml;
     }
 
     private String callApi(final String uri) {
