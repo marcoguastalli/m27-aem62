@@ -95,6 +95,7 @@ var getIsbnBook = function () {
             },
             success: function(responseData) {
                 $("#getIsbnBookOutput").html(responseData);
+                location.reload();
             }
         });
     });
