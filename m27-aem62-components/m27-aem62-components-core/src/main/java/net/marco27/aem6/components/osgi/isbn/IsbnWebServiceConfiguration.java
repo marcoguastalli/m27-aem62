@@ -16,7 +16,7 @@ import org.osgi.service.component.ComponentContext;
 public class IsbnWebServiceConfiguration {
 
     public static final String PROPERTY_API_KEY = "apiKey";
-    public static final String PROPERTY_API_KEY_DEFAULT_VALUE = "ZA7KWZ3X";
+    public static final String PROPERTY_API_KEY_DEFAULT_VALUE = "";
 
     private String apiKey;
 
