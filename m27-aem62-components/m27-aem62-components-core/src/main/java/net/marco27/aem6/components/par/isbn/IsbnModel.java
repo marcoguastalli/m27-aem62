@@ -1,9 +1,12 @@
 package net.marco27.aem6.components.par.isbn;
 
+import java.util.Map;
+
 import javax.annotation.PostConstruct;
 import javax.inject.Inject;
 
 import org.apache.sling.api.SlingHttpServletRequest;
+import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.OSGiService;
 import org.apache.sling.models.annotations.injectorspecific.ScriptVariable;
@@ -38,6 +41,10 @@ public class IsbnModel {
 
     public String getMappedUri() {
         return mappedUri;
+    }
+
+    public Map<String, String> getIsbnBooks() {
+        return isbnWebServiceStore.getIsbnBooks();
     }
 
 }
