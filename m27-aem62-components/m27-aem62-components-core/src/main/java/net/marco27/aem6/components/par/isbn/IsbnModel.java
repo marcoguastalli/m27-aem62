@@ -40,7 +40,4 @@ public class IsbnModel {
         return mappedUri;
     }
 
-    public String getIsbnBook() {
-        return isbnWebService.getBook("TODO");
-    }
 }
