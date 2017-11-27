@@ -25,9 +25,9 @@ public class IsbnWebServiceServlet extends SlingAllMethodsServlet {
             IOException {
         String mappedUri = request.getParameter(REQ_PARM_MAPPED_URI);
         String isbnCode = request.getParameter(REQ_PARM_ISBN_CODE);
-
+        //TODO add input Validation
         String result = isbnWebService.getBook(isbnCode);
-
+        //TODO add result validation
         response.getWriter().print(result);
 
     }
