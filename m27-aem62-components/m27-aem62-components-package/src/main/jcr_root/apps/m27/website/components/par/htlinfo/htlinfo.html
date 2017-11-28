@@ -1,9 +1,104 @@
+<div class="wrapper">
+    <h2>HTL Info Component - an HTL Showcase</h2>
+    <div class="row">
+        <div class="column">
+            <p>pageProperties.jcr:title</p>
+        </div>
+        <div class="column">
+            <p>${pageProperties.jcr:title}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <p>properties.jcr:title</p>
+        </div>
+        <div class="column">
+            <p data-sly-test="${properties.jcr:title}">${properties.jcr:title}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <p>properties.jcr:description</p>
+        </div>
+        <div class="column">
+            <p data-sly-test="${properties.jcr:description}">${properties.jcr:description}</p>
+        </div>
+    </div>
+    <h3>currentPage</h3>
+    <div class="row">
+        <div class="column">
+            <p>currentPage.pageTitle</p>
+        </div>
+        <div class="column">
+            <p data-sly-test="${currentPage.pageTitle}">${currentPage.pageTitle}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <p>currentPage.path</p>
+        </div>
+        <div class="column">
+            <p data-sly-test="${currentPage.path}">${currentPage.path}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <p>currentStyle</p>
+        </div>
+        <div class="column">
+            <p data-sly-test="${currentStyle}">${currentStyle}</p>
+        </div>
+    </div>
+    <h3>HTL Block Statement</h3>
+    <h4><a href="https://helpx.adobe.com/experience-manager/htl/using/block-statements.html">Adobe Docs Page</a></h4>
+    <div class="row">
+        <div class="column">
+            <p>data-sly-text</p>
+        </div>
+        <div class="column">
+            <p data-sly-text="${properties.jcr:description}">Lorem ipsum</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <p>data-sly-use</p>
+        </div>
+        <div class="column">
+            <p>data-sly-use.component...</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <p>data-sly-unwrap</p>
+        </div>
+        <div class="column">
+            <p data-sly-unwrap>this text has no p tag...</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <p>data-sly-attribute</p>
+        </div>
+        <div class="column">
+            <p title="Lorem Ipsum" data-sly-attribute.title="${properties.jcr:title}"></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <p>data-sly-element</p>
+        </div>
+        <div class="column">
+            <p>&nbsp;</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <p>&nbsp;</p>
+        </div>
+        <div class="column">
+            <p>&nbsp;</p>
+        </div>
+    </div>
+</div>
 <div class="cq-placeholder" data-emptytext="HTL INFO"
      data-sly-test.isEmpty="${!wcmmode.disabled && !properties.jcr:title}"></div>
-<div>
-    <p>${pageProperties.jcr:title}</p>
-    <p data-sly-test="${properties.jcr:title}">properties.jcr:title: ${properties.jcr:title}</p>
-    <p data-sly-test="${currentPage.pageTitle}">currentPage.pageTitle: ${currentPage.pageTitle}</p>
-    <p data-sly-test="${currentPage.path}">currentPage.path: ${currentPage.path}</p>
-    <p data-sly-test="${currentStyle}">currentStyle: ${currentStyle}</p>
-</div>
