@@ -23,6 +23,6 @@ public class Sadness {
     }
 
     public String getSadness() {
-        return sadness;
+        return "Hola, " + sadness + " estás triste?";
     }
 }
