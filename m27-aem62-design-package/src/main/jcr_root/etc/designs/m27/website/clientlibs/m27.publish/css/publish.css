@@ -19,4 +19,11 @@ p {
     font-family: Verdana;
 }
 
+/* https://medium.freecodecamp.org/how-to-make-your-html-responsive-by-adding-a-single-line-of-css-2a62de81e431 */
+.cssgridcontainer {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 50px 50px;
+}
+
 /*m27 structure END*/
