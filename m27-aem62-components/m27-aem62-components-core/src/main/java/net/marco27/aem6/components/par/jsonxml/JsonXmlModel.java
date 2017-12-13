@@ -27,6 +27,8 @@ public class JsonXmlModel {
     }
 
     public String getPath() {
+        //TODO do it better my italian friend
+        jsonXmlService.storeJsonXml("do it better my italian friend", path, "Better Title", "Better Description");
         return path;
     }
 }
