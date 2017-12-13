@@ -18,7 +18,7 @@
         <home jcr:primaryType="nt:unstructured">
             <par jcr:primaryType="nt:unstructured"
                  sling:resourceType="wcm/foundation/components/parsys"
-                 components="[/apps/m27/website/components/par/htltemplate,/apps/m27/website/components/par/image,/apps/m27/website/components/par/jora,/apps/m27/website/components/par/textimage,/apps/m27/website/components/par/textandimage,/apps/m27/website/components/par/baseclientlib,/apps/m27/website/components/par/baseosgi,/apps/m27/website/components/par/sadness,/apps/m27/website/components/par/isbn]">
+                 components="[/apps/m27/website/components/par/htltemplate,/apps/m27/website/components/par/image,/apps/m27/website/components/par/jora,/apps/m27/website/components/par/textimage,/apps/m27/website/components/par/textandimage,/apps/m27/website/components/par/baseclientlib,/apps/m27/website/components/par/baseosgi,/apps/m27/website/components/par/sadness,/apps/m27/website/components/par/jsonxml,/apps/m27/website/components/par/isbn]">
             </par>
         </home>
     </jcr:content>
