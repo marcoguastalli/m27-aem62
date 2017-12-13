@@ -6,11 +6,11 @@ import org.apache.felix.scr.annotations.Activate;
 import org.apache.felix.scr.annotations.Reference;
 import org.apache.felix.scr.annotations.Service;
 import org.apache.sling.api.resource.LoginException;
+import org.apache.sling.api.resource.PersistenceException;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ResourceResolver;
 import org.osgi.framework.BundleContext;
 import org.osgi.service.component.ComponentContext;
-import org.osgi.service.component.annotations.Component;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -42,10 +42,13 @@ public class JsonXmlServiceImpl implements JsonXmlService {
             resourceResolver = resourceResolverService.getServiceResourceResolver(ResolverType.CONTENT_WRITE);
             Resource resource = resourceResolver.getResource(path);
             Node node = resource.adaptTo(Node.class);
-            jsonXmlStore.storeJsonXml(node, path, jcrTitle, jcrDescription);
+            jsonXmlStore.storeJsonXml(node, jsonxml, jcrTitle, jcrDescription);
+            resourceResolver.commit();
         } catch (LoginException e) {
             LOG.error("Error store JsonXml", e);
         } catch (JsonXmlException e) {
+            LOG.error("Error store JsonXml", e);
+        } catch (PersistenceException e) {
             LOG.error("Error store JsonXml", e);
         } finally {
             if (resourceResolver != null) {

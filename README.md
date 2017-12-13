@@ -74,3 +74,7 @@ http://localhost:6201/content/m27/isbn.html
 http://localhost:6200/editor.html/content/m27/jsonxml.html
 http://localhost:6200/content/m27/jsonxml.html
 http://localhost:6201/content/m27/jsonxml.html
+##### Require a System-User with content-write permissions
+Create using http://localhost:6201/crx/explorer/index.jsp
+Add permissions using http://localhost:6201/useradmin adding it in the content-author group
+Then in http://localhost:6201/crx/de/index.jsp#/content/m27/jsonxml/jcr%3Acontent/par/jsonxml the content will be created
