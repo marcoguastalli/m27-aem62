@@ -1,1 +1,18 @@
-<sly data-sly-use.jsonxml="${'net.marco27.aem6.components.par.jsonxml.JsonXmlModel'}">${jsonxml.path}</sly>
+<sly data-sly-use.jsonxml="${'net.marco27.aem6.components.par.jsonxml.JsonXmlModel'}"></sly>
+
+<div class="wrapper">
+    <h2>Json XML ${currentPage}</h2>
+    <form method="post" id="formJsonXMl" name="formJsonXml" action="/bin/m27/jsonxml">
+        <input type="hidden" id="path" name="path" value="${currentPage.path}"/>
+        <div class="row">
+            <div class="column">
+                <input type="text" id="textJsonXMl" name="textJsonXMl" value="${jsonxml.textJsonXMl}"/>
+            </div>
+            <div class="column">
+                <input type="submit" id="fSub" name="fSub" value="Write XML"/>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="cq-placeholder" data-emptytext="${component.title}" data-sly-test.isEmpty="${!wcmmode.disabled && !properties.jcr:title}"></div>

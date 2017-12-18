@@ -5,21 +5,19 @@ import javax.annotation.PostConstruct;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
-import org.apache.sling.models.annotations.injectorspecific.OSGiService;
 import org.apache.sling.models.annotations.injectorspecific.Self;
-
-import net.marco27.aem6.components.osgi.jsonxml.JsonXmlService;
+import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 
 @Model(adaptables = Resource.class, defaultInjectionStrategy = DefaultInjectionStrategy.REQUIRED)
 public class JsonXmlModel {
-
-    @OSGiService
-    private JsonXmlService jsonXmlService;
 
     @Self
     private Resource resource;
 
     private String path;
+
+    @ValueMapValue
+    private String textJsonXMl;
 
     @PostConstruct
     public void init() {
@@ -27,8 +25,10 @@ public class JsonXmlModel {
     }
 
     public String getPath() {
-        //TODO do it better my italian friend
-        jsonXmlService.storeJsonXml("do it better my italian friend", path, "Better Title", "Better Description");
         return path;
+    }
+
+    public String getTextJsonXMl() {
+        return textJsonXMl;
     }
 }
