@@ -106,9 +106,9 @@ var getIsbnBook = function () {
  */
 $(document).ready(function () {
     h3Text();
-    callHelloOsgiServlet()
-    callHelloOsgiServletProp()
-    callHelloOsgiServletPropReset()
-    refreshJora()
-    getIsbnBook()
+    callHelloOsgiServlet();
+    callHelloOsgiServletProp();
+    callHelloOsgiServletPropReset();
+    refreshJora();
+    getIsbnBook();
 });
