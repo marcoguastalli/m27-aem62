@@ -7,7 +7,7 @@
         cq:workflowDetailsPage="/mnt/overlay/dam/gui/content/s7dam/jobmonitoring/encodingjobdetails.html${item}?item=${payload}"
         jcr:description="This workflow manages the update of assets"
         jcr:primaryType="cq:PageContent"
-        jcr:title="DAM Update Asset"
+        jcr:title="DAM27 Update Asset"
         sling:resourceType="cq/workflow/components/pages/model"
         transient="true">
         <flow

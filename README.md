@@ -88,3 +88,7 @@ Then in http://localhost:6201/crx/de/index.jsp#/content/m27/jsonxml/jcr%3Aconten
 http://localhost:6200/editor.html/content/m27/css/cssgrid.html
 http://localhost:6200/content/m27/css/cssgrid.html
 http://localhost:6201/content/m27/css/cssgrid.html
+
+#WORKFLOW
+http://localhost:6200/libs/cq/workflow/admin/console/content/launchers.html
+http://localhost:6200/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models
