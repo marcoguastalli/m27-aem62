@@ -5,7 +5,7 @@
     jcr:uuid="01001f76-9ea5-45ed-934f-dca169e9c9b6"
     sling:resourceType="cq/workflow/components/model"
     description="This workflow manages the update of assets"
-    title="DAM Update Asset">
+    title="DAM27 Update Asset">
     <metaData
         jcr:primaryType="nt:unstructured"
         tags="dam,wcm"
