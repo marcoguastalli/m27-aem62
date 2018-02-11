@@ -2,5 +2,6 @@
 <workspaceFilter version="1.0">
     <filter root="/content/m27" mode="replace"/>
     <filter root="/etc/migrationtool" mode="update"/>
+    <filter root="/etc/workflow" mode="update"/>
     <filter root="/apps/m27/website/config"/>
 </workspaceFilter>
