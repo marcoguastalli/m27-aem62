@@ -39,9 +39,9 @@
     <modules>
         <module>m27-aem62-complete-package</module>
         <module>m27-aem62-components</module>
+        <module>m27-aem62-config-package</module>
         <module>m27-aem62-democontent-package</module>
         <module>m27-aem62-design-package</module>
-         <module>m27-aem62-config-package</module>
    </modules>
 
     <profiles>

@@ -55,6 +55,12 @@
             <type>content-package</type>
         </dependency>
         <dependency>
+            <artifactId>m27-aem62-config-package</artifactId>
+            <groupId>net.marco27.aem.config</groupId>
+            <version>${project.version}</version>
+            <type>content-package</type>
+        </dependency>
+        <dependency>
             <artifactId>m27-aem62-design-package</artifactId>
             <groupId>net.marco27.aem.design</groupId>
             <version>${project.version}</version>
