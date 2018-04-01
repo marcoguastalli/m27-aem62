@@ -15,6 +15,7 @@
 
     <properties>
         <package.root>/apps/m27/website/config</package.root>
+        <package.root>/conf/m27/settings/wcm</package.root>
     </properties>
 
     <build>
