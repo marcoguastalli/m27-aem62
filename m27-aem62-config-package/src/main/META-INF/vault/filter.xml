@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
     <filter root="/apps/m27/website/config"/>
+    <filter root="/conf/m27/settings/wcm"/>
 </workspaceFilter>
