@@ -2,13 +2,13 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
           xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
           jcr:primaryType="cq:Template"
-          jcr:title="Base Template"
-          jcr:description="Base Template"
+          jcr:title="Content Page Template"
+          jcr:description="Content Page Template"
           allowedPaths="[/content(/.*)?]"
           allowedChildren="[]"
           ranking="{Long}1">
     <jcr:content
             jcr:primaryType="cq:PageContent"
             cq:designPath="/etc/designs/m27/website"
-            sling:resourceType="m27/website/pages/base"/>
+            sling:resourceType="m27/website/pages/contentpage"/>
 </jcr:root>

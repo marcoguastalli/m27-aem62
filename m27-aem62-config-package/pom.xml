@@ -26,7 +26,7 @@
                 <configuration>
                     <!-- install ACLs -->
                     <properties>
-                        <installhook.actool.class>biz.netcentric.cq.tools.actool.installhook.AcToolInstallHook</installhook.actool.class>
+                        <!--installhook.actool.class>biz.netcentric.cq.tools.actool.installhook.AcToolInstallHook</installhook.actool.class-->
                     </properties>
                     <!-- reuse the filter.xml for the created package (will be merged
                         with the package.root from above) -->
