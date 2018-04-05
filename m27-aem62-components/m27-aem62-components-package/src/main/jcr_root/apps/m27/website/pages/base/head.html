@@ -1,9 +1,9 @@
-<!--/* Initializes the Experience Manager authoring UI */-->
-<sly data-sly-include="/libs/wcm/core/components/init/init.jsp" data-sly-unwrap/>
 <head data-sly-use.wcmInit="initwcm.js"
 	  data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html">
 	<title data-sly-test="${currentPage.pageTitle}">${currentPage.pageTitle}</title>
 	<title data-sly-test="${!currentPage.pageTitle}">${currentPage.title}</title>
 	<sly data-sly-include="head-meta.html"></sly>
+	<!--/* Initializes the Experience Manager authoring UI */-->
+	<sly data-sly-include="/libs/wcm/core/components/init/init.jsp" data-sly-unwrap/>
 	<sly data-sly-include="stylesheets.html"></sly>
 </head>

@@ -24,7 +24,7 @@
         <contentpage jcr:primaryType="nt:unstructured">
             <par jcr:primaryType="nt:unstructured"
                  sling:resourceType="wcm/foundation/components/parsys"
-                 components="[wcm/foundation/components/responsivegrid]">
+                 components="[wcm/foundation/components/responsivegrid,/apps/m27/website/components/par/image,/apps/m27/website/components/par/textimage]">
                 <responsivegrid jcr:primaryType="nt:unstructured">
                     <par jcr:primaryType="nt:unstructured" sling:resourceType="wcm/foundation/components/parsys"
                          components="/apps/m27/website/components/par/image,/apps/m27/website/components/par/textimage"/>
